@@ -40,11 +40,11 @@ function App() {
           />
           <button onClick={listOfItems}>+</button>
 
-          <ul>
+          <ol>
             {items.map((itemVal, index) => {
               return <ToDoList text={itemVal} key={index} id={index} onSelect={deleteItem} />;
             })}
-          </ul>
+          </ol>
         </div>
       </div>
     </>
